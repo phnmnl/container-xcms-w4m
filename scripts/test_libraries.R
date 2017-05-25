@@ -1,0 +1,11 @@
+#!/bin/env Rscript
+library(xcms)
+library(parallel)
+library(BiocGenerics)
+library(Biobase)
+library(Rcpp)
+library(mzR)
+library(xcms)
+library(snow)
+library(batch)
+sessionInfo() 

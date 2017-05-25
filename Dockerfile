@@ -6,8 +6,8 @@ FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL software=xcms-w4m
-LABEL software.version=1.7.5
-LABEL version=0.2
+LABEL software.version=1.52.0
+LABEL version=0.1
 
 # Setup package repos
 RUN echo "deb http://cloud.r-project.org/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list
@@ -29,9 +29,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends libboost-dev li
     	apt-get purge -y r-base-dev git libcurl4-openssl-dev libssl-dev libssh2-1-dev r-base-dev libboost-dev && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/{apt,dpkg,cache,log}/ /tmp/* /var/tmp/*
 
-# Add IPO script to path
 #ADD runTest1.sh /usr/local/bin/runTest1.sh
 #RUN chmod +x /usr/local/bin/runTest1.sh
 
-# Define Entry point script
-#ENTRYPOINT ["runIPO.R"]
