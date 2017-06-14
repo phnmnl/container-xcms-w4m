@@ -6,8 +6,8 @@ FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL software=xcms-w4m
-LABEL software.version=1.52.0
-LABEL version=0.1
+LABEL software.version=2.99.3
+LABEL version=0.2
 
 # Setup package repos
 RUN echo "deb http://cloud.r-project.org/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list
